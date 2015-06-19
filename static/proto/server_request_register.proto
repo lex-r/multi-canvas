@@ -1,0 +1,6 @@
+package messages;
+
+message ServerRequestRegister {
+    required int32 w = 1;
+    required int32 h = 2;
+}

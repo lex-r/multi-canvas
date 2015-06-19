@@ -1,0 +1,9 @@
+import "ball.proto";
+
+package messages;
+
+message ClientRequestCreateWorld {
+    required int32 width = 1;
+    required int32 height = 2;
+    required Ball ball = 3;
+}

@@ -1,0 +1,11 @@
+import "server_request_ping.proto";
+import "server_request_register.proto";
+
+package messages;
+
+message ServerRequest {
+    required string method = 1;
+
+    optional ServerRequestPing requestPing = 2;
+    optional ServerRequestRegister requestRegister = 3;
+}

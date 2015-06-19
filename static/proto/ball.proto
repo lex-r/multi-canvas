@@ -1,0 +1,8 @@
+package messages;
+
+message Ball {
+    required int32 x = 1;
+    required int32 y = 2;
+    required int32 dirX = 3;
+    required int32 dirY = 4;
+}

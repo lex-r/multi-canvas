@@ -1,0 +1,13 @@
+import "client_request_pong.proto";
+import "client_request_create_world.proto";
+import "client_request_monitor.proto";
+
+package messages;
+
+message ClientRequest {
+    required string method = 1;
+
+    optional ClientRequestPong requestPong = 2;
+    optional ClientRequestCreateWorld requestCreateWorld = 3;
+    optional ClientRequestMonitor requestMonitor = 4;
+}
